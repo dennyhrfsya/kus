@@ -1,0 +1,25 @@
+{
+  "name": "kus",
+  "version": "1.0.0",
+  "description": "Compro KUS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "minify": "tailwindcss -i ./src/input.css -o ./dist/final.css --minify",
+    "gitadd": "git add .",
+    "gitstatus": "git status",
+    "gitcommit": "git commit -m",
+    "gitlog": "git log",
+    "gitpush": "git push -u origin main",
+    "gitpull": "git pull origin main",
+    "gitgraph": "git log --graph --oneline --all",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

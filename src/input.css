@@ -1,15 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "tailwindcss";
-@import "tailwindcss-animated";
+@import 'tailwindcss';
+@import 'tailwindcss-animated';
 
 .hamburger-line {
   @apply my-2 block h-[2px] w-[30px] bg-choco;
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply -rotate-[30deg] translate-y-2.5 w-5;
+  @apply w-5 translate-y-2.5 -rotate-[30deg];
 }
 
 .hamburger-active > span:nth-child(2) {
@@ -17,7 +17,7 @@
 }
 
 .hamburger-active > span:nth-child(3) {
-  @apply rotate-[30deg] -translate-y-2.5 w-5;
+  @apply w-5 -translate-y-2.5 rotate-[30deg];
 }
 
 .navbar-fixed {

@@ -846,6 +846,42 @@ video {
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-left {
+  animation: fade-left var(--default-animation-duration, 1s)
+    var(--default-animation-timing-function, ease)
+    var(--default-animation-delay, 0s) both;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-right {
+  animation: fade-right var(--default-animation-duration, 1s)
+    var(--default-animation-timing-function, ease)
+    var(--default-animation-delay, 0s) both;
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -880,42 +916,6 @@ video {
 
 .animate-jump-in {
   animation: jump-in var(--default-animation-duration, 0.5s)
-    var(--default-animation-timing-function, ease)
-    var(--default-animation-delay, 0s) both;
-}
-
-@keyframes fade-left {
-  0% {
-    opacity: 0;
-    transform: translateX(2rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-fade-left {
-  animation: fade-left var(--default-animation-duration, 1s)
-    var(--default-animation-timing-function, ease)
-    var(--default-animation-delay, 0s) both;
-}
-
-@keyframes fade-right {
-  0% {
-    opacity: 0;
-    transform: translateX(-2rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-fade-right {
-  animation: fade-right var(--default-animation-duration, 1s)
     var(--default-animation-timing-function, ease)
     var(--default-animation-delay, 0s) both;
 }
@@ -1033,10 +1033,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[url\(\'\/dist\/img\/hero\.jpg\'\)\] {
-  background-image: url('/dist/img/hero.jpg');
 }
 
 .bg-gradient-to-r {

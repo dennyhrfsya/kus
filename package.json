@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/dennyhrfsya/kus/issues"
   },
-  "homepage": "https://github.com/dennyhrfsya/kus#readme"
+  "homepage": "https://github.com/dennyhrfsya/kus#readme",
+  "dependencies": {
+    "tailwindcss-animated": "^2.0.0"
+  }
 }

@@ -1036,7 +1036,7 @@ video {
 }
 
 .bg-\[url\(\'\/dist\/img\/hero\.jpg\'\)\] {
-  background-image: url('https://github.com/dennyhrfsya/kus/raw/main/dist/img/hero.jpg');
+  background-image: url('/dist/img/hero.jpg');
 }
 
 .bg-gradient-to-r {
